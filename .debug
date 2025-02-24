@@ -1,0 +1,7 @@
+<ExtensionList>
+    <Extension Id="scene.render.panel">
+       <HostList>
+           <Host Name="PPRO" Port="8088"/>
+        </HostList>
+    </Extension>
+</ExtensionList>

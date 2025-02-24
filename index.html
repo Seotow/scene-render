@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scene Exporter</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Xuất thành các ảnh</h1>
+    
+    <!-- Hiển thị số lượng scene được chọn -->
+    <!-- <div id="scene-info">
+      <p>Số scene được chọn: <span id="scene-count">0</span></p>
+    </div> -->
+    
+    <!-- Nút xuất scene -->
+    <div id="controls">
+      <button id="export-scene">Xuất</button>
+    </div>
+
+    <!-- Khu vực hiển thị kết quả transcript (tùy chọn) -->
+    <h1>Xuất thành văn bản</h1>
+    <div id="choose-model">
+      <p>Chọn model (model càng lớn, tốc độ càng chậm, độ chính xác càng cao):</p>
+      <div>
+        <input type="radio" name="model-type" id="small" value="small"/>
+        <label for="small">small</label>
+      </div>
+      <div>
+        <input type="radio" name="model-type" id="medium" value="medium"/>
+        <label for="medium">medium</label>
+      </div>
+      <div>
+        <input type="radio" name="model-type" id="turbo" value="turbo" checked/>
+        <label for="turbo">turbo</label>
+      </div>
+      <div>
+        <input type="radio" name="model-type" id="large" value="large"/>
+        <label for="large">large</label>
+      </div>
+    </div>
+    <pre id="transcript-text"></pre>
+    <button id="transcribe-audio-button">Xuất</button>
+    <!-- <button id="test">test</button> -->
+  </div>
+
+  <script src="./js/CSInterface.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

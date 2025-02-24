@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "QuodlibetSans";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/QuodlibetSans-Light.ttf") format('truetype');
+}
+/* Scrollbar css */
+html *::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #aaa;
+    border: 1px solid #aaa;
+}
+
+body {
+    color: #b9b9b9;
+    font-family: "QuodlibetSans";
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    color: #2d8bea;
+    border: none;
+    width: 50px;
+}
+
+button {
+    outline: none;
+    margin-left: auto;
+    margin-right: 16px;
+    color: #fff;
+    display: block;
+    min-height: 24px;
+    width: 100px;
+    text-align: center;
+    border: none;
+    background-color: #2d8bea;
+    border-radius: 70px;
+}
+
+.progressBar {
+    height: 4px;
+    border-radius: 50px;
+    background-color: #2d8bea;
+    width: 0;
+    margin-bottom: 8px;
+}
+
+#scene-info {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#choose-model {
+    display: flex;
+    flex-direction: column;
+}
+
+#choose-model div {
+    display: flex;
+    align-items: center;
+}
