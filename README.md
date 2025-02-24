@@ -10,15 +10,15 @@ SceneRender là một extension cho Adobe Premiere Pro, giúp người dùng xu�
 - **Không cần cài đặt riêng Python và Node.js**, chúng được đóng gói trong trình cài đặt.
 
 ### **Cách cài đặt**
-1. **Tải trình cài đặt** từ GitHub Releases:
-   👉 [Tải xuống tại đây](https://github.com/your-username/your-repo/releases/latest)
+1. **Tải trình cài đặt (SceneRender.exe)** tại:
+   👉 [Tải xuống tại đây](https://github.com/Seotow/scene-render/releases)
 
 2. **Chạy file cài đặt (.exe)** và làm theo hướng dẫn.
    - Ứng dụng sẽ tự động cài vào thư mục:
      ```
      C:\Program Files\Common Files\Adobe\CEP\extensions\SceneRender
      ```
-   - Đồng thời thêm Python và Node.js vào PATH để sử dụng trong ứng dụng.
+   - Đồng thời tự động thêm Python và Node.js vào PATH để sử dụng trong ứng dụng.
 
 3. **Khởi động lại Adobe Premiere Pro**.
 
@@ -34,8 +34,8 @@ SceneRender là một extension cho Adobe Premiere Pro, giúp người dùng xu�
 ## ❓ Hỗ trợ
 Nếu gặp lỗi hoặc có câu hỏi, vui lòng tạo issue trên GitHub hoặc liên hệ với chúng tôi.
 
-📌 **GitHub Issues**: [Tạo issue tại đây](https://github.com/your-username/your-repo/issues)
+📌 **GitHub Issues**: [Tạo issue tại đây](https://github.com/Seotow/scene-render/issues)
 
 ---
-✉ **Developed by [Your Name]**
+✉ **Developed by Hiếu Nguyễn**
 
