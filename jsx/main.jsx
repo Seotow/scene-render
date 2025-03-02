@@ -1,6 +1,6 @@
 
 function getExtensionRootFolder() {
-    return File($.fileName).parent.fsName + '\\CEP\\extensions\\SceneRender';
+    return File($.fileName).parent.fsName + '\\CEP\\extensions\\scene-render';
 }
 
 // Hàm lấy danh sách các clip video đang được chọn
@@ -66,7 +66,6 @@ function exportSelectedFrames() {
             $.writeln("Lỗi khi xuất frame tại " + timeStr);
         }
         
-        $.sleep(500);
     }
     
     alert("Xuất ảnh cho " + selectedClips.length + " scene hoàn tất!");
@@ -117,9 +116,31 @@ function exportSelectedScenesAudio() {
         } else {
             $.writeln("Lỗi khi xuất âm thanh cho scene " + i);
         }
-        $.sleep(500);
     
     }
     // Trả về mảng file âm thanh dưới dạng JSON string để CEP JS xử lý
     return JSON.stringify(audioFiles);
+}
+
+
+
+function isDuplicate(newImagePath, index) {
+    // Nếu là ảnh đầu tiên, không có ảnh để so sánh nên không phải duplicate
+    if (index === 0) return false;
+    
+    // Xác định đường dẫn của ảnh trước đó đã được lưu
+    var prevImagePath = Folder.userData.fsName + "/SceneRender/scene_" + (index - 1) + ".png";
+    var prevFile = new File(prevImagePath);
+    var newFile = new File(newImagePath);
+    
+    // Nếu ảnh trước không tồn tại, không thể so sánh => không duplicate
+    if (!prevFile.exists) return false;
+    
+    // So sánh kích thước file như một cách kiểm tra sơ bộ (có thể tinh chỉnh thêm nếu cần so sánh pixel chi tiết hơn)
+    var prevSize = prevFile.length;
+    var newSize = newFile.length;
+    
+    // Tính phần trăm khác biệt giữa kích thước (threshold 5%)
+    var diff = Math.abs(prevSize - newSize) / Math.max(prevSize, newSize);
+    return diff < 0.05;
 }

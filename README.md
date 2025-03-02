@@ -13,7 +13,7 @@ SceneRender là một extension cho Adobe Premiere Pro, giúp người dùng xu�
 1. **Tải trình cài đặt (SceneRender.exe)** tại:
    👉 [Tải xuống tại đây](https://github.com/Seotow/scene-render/releases)
 
-2. **Chạy file cài đặt (.exe)** và làm theo hướng dẫn.
+2. **Chạy file cài đặt (.exe)** và chọn thư mục mặc định để cài (Yêu cầu 3 - 5GB ổ cứng) sau đó tiếp tục đến hết để ứng dụng tự cài đặt.
    - Ứng dụng sẽ tự động cài vào thư mục:
      ```
      C:\Program Files\Common Files\Adobe\CEP\extensions\SceneRender
